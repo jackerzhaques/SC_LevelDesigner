@@ -1,0 +1,4 @@
+<spritesheet src="sara-basic-bow.png" Name="Sara">
+ <frame rect="(0,0,100,100)" period="200" type="0" index="0" origin="(50,100)" anchor="(90,90)" dir="0"/>
+ <frame rect="(0,0,100,100)" period="200" type="0" index="1" origin="(50,100)" anchor="(90,90)" dir="0"/>
+</spritesheet>
