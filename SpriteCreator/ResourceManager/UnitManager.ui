@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UnitManager</class>
+ <widget class="QWidget" name="UnitManager">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>904</width>
+    <height>504</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QSplitter" name="splitter">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QWidget" name="UnitListContainer" native="true">
+      <property name="styleSheet">
+       <string notr="true">#UnitListContainer{
+	background-color: white;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+}</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="1">
+        <widget class="QPushButton" name="AddUnitButton">
+         <property name="text">
+          <string>Add</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLineEdit" name="AddUnitInput">
+         <property name="placeholderText">
+          <string>Super Berserker</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QPushButton" name="RemoveUnitButton">
+         <property name="text">
+          <string>Remove</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0" colspan="3">
+        <widget class="QListWidget" name="UnitList"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QTableWidget" name="UnitEditTable">
+      <attribute name="horizontalHeaderStretchLastSection">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="verticalHeaderStretchLastSection">
+       <bool>false</bool>
+      </attribute>
+      <row>
+       <property name="text">
+        <string>Generic Information</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Name</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Base Stats</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Intellect</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Strength</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Agility</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Constitution</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Spirit</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Mana Type</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Mana Base</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Mana Regen</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Health Base</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Health Regen</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Combat</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Attack Type</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Range</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Base Damage</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Critical Strike Chance</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Critical Strike Multiplier</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Critical Strike Bonus</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Missile Art</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Missile Arc</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Splash Range</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Spells and Abilities</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Abilities</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Passives</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Art</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Spritesheet</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>XML</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Icon</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Projectile Launch Position X</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Projectile Launch Position Y</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Movement</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Type</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Base</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Acceleration</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Has Collision</string>
+       </property>
+      </row>
+      <column>
+       <property name="text">
+        <string>Value</string>
+       </property>
+      </column>
+      <item row="0" column="0">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="flags">
+        <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsUserCheckable</set>
+       </property>
+      </item>
+      <item row="1" column="0">
+       <property name="text">
+        <string>Empty Entity</string>
+       </property>
+      </item>
+      <item row="2" column="0">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="flags">
+        <set>ItemIsDragEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+       </property>
+      </item>
+      <item row="3" column="0">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </item>
+      <item row="4" column="0">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </item>
+      <item row="5" column="0">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </item>
+      <item row="6" column="0">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </item>
+      <item row="7" column="0">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </item>
+      <item row="8" column="0">
+       <property name="text">
+        <string>HANDLED IN CODE</string>
+       </property>
+      </item>
+      <item row="9" column="0">
+       <property name="text">
+        <string>100</string>
+       </property>
+      </item>
+      <item row="10" column="0">
+       <property name="text">
+        <string>1</string>
+       </property>
+      </item>
+      <item row="11" column="0">
+       <property name="text">
+        <string>100</string>
+       </property>
+      </item>
+      <item row="12" column="0">
+       <property name="text">
+        <string>1</string>
+       </property>
+      </item>
+      <item row="13" column="0">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="flags">
+        <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsUserCheckable</set>
+       </property>
+      </item>
+      <item row="14" column="0">
+       <property name="text">
+        <string>HANDLED IN CODE</string>
+       </property>
+      </item>
+      <item row="15" column="0">
+       <property name="text">
+        <string>100</string>
+       </property>
+      </item>
+      <item row="16" column="0">
+       <property name="text">
+        <string>5</string>
+       </property>
+      </item>
+      <item row="17" column="0">
+       <property name="text">
+        <string>10</string>
+       </property>
+      </item>
+      <item row="18" column="0">
+       <property name="text">
+        <string>2.00</string>
+       </property>
+      </item>
+      <item row="19" column="0">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </item>
+      <item row="20" column="0">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="21" column="0">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="22" column="0">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="23" column="0">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="flags">
+        <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsUserCheckable</set>
+       </property>
+      </item>
+      <item row="24" column="0">
+       <property name="text">
+        <string>HANDLED IN CODE</string>
+       </property>
+      </item>
+      <item row="25" column="0">
+       <property name="text">
+        <string>HANDLED IN CODE</string>
+       </property>
+      </item>
+      <item row="26" column="0">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="flags">
+        <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsUserCheckable</set>
+       </property>
+      </item>
+      <item row="27" column="0">
+       <property name="text">
+        <string>HANDLED IN CODE</string>
+       </property>
+      </item>
+      <item row="28" column="0">
+       <property name="text">
+        <string>HANDLED IN CODE</string>
+       </property>
+      </item>
+      <item row="29" column="0">
+       <property name="text">
+        <string>HANDLED IN CODE</string>
+       </property>
+      </item>
+      <item row="30" column="0">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </item>
+      <item row="31" column="0">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </item>
+      <item row="32" column="0">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="flags">
+        <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsUserCheckable</set>
+       </property>
+      </item>
+      <item row="33" column="0">
+       <property name="text">
+        <string>HANDLED IN CODE</string>
+       </property>
+      </item>
+      <item row="34" column="0">
+       <property name="text">
+        <string>100</string>
+       </property>
+      </item>
+      <item row="35" column="0">
+       <property name="text">
+        <string>50</string>
+       </property>
+      </item>
+      <item row="36" column="0">
+       <property name="text">
+        <string>HANDLED IN CODE</string>
+       </property>
+      </item>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

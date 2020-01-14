@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AbilityManager</class>
+ <widget class="QWidget" name="AbilityManager">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>816</width>
+    <height>406</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QSplitter" name="splitter">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QWidget" name="ListContainer" native="true">
+      <property name="styleSheet">
+       <string notr="true">#UnitListContainer{
+	background-color: white;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+}</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="1">
+        <widget class="QPushButton" name="AddButton">
+         <property name="text">
+          <string>Add</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLineEdit" name="AddInput">
+         <property name="placeholderText">
+          <string>Bloodlust</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QPushButton" name="RemoveButton">
+         <property name="text">
+          <string>Remove</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0" colspan="3">
+        <widget class="QListWidget" name="List"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QTableWidget" name="EditTable">
+      <attribute name="horizontalHeaderStretchLastSection">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="verticalHeaderStretchLastSection">
+       <bool>false</bool>
+      </attribute>
+      <row>
+       <property name="text">
+        <string>Generic Information</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Text - Learn</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Text - Learn Extended</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Text - Normal</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Text - Normal Extended</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Text - Disabled Extended</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Cast Information</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Cast Time</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Is Chanelled</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Channel Duration</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Cooldown</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Range</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Ability Damage</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Target Type</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Mana Cost</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Mana Drain</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Maximum Levels</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Level Gap</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Art</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Cast Sound</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Cast Effect</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Channel Sound</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Channel Effect</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Unit Attribute Modifiers</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Intellect</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Stength</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Agility</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Constitution</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Spirit</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Health</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Health Regen</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Mana</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Mana Regen</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Movement Speed</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Acceleration</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Attack Modifiers</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Disables Collision</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Damage</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Crit Chance</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Crit Multiplier</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Crit Bonus</string>
+       </property>
+      </row>
+      <column>
+       <property name="text">
+        <string>Value</string>
+       </property>
+      </column>
+      <item row="0" column="0">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="flags">
+        <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsUserCheckable</set>
+       </property>
+      </item>
+      <item row="1" column="0">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="2" column="0">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="3" column="0">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="4" column="0">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="5" column="0">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="6" column="0">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="flags">
+        <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsUserCheckable</set>
+       </property>
+      </item>
+      <item row="7" column="0">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="8" column="0">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="9" column="0">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="10" column="0">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="11" column="0">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="12" column="0">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="13" column="0">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="14" column="0">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="15" column="0">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="16" column="0">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="17" column="0">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="18" column="0">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="flags">
+        <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsUserCheckable</set>
+       </property>
+      </item>
+      <item row="19" column="0">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="20" column="0">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="21" column="0">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="22" column="0">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="23" column="0">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="flags">
+        <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsUserCheckable</set>
+       </property>
+      </item>
+      <item row="24" column="0">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="25" column="0">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="26" column="0">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="27" column="0">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="28" column="0">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="29" column="0">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="30" column="0">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="31" column="0">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="32" column="0">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="33" column="0">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="34" column="0">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="35" column="0">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="flags">
+        <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsUserCheckable</set>
+       </property>
+      </item>
+      <item row="36" column="0">
+       <property name="text">
+        <string>HANDLED IN CODE</string>
+       </property>
+      </item>
+      <item row="37" column="0">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="38" column="0">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="39" column="0">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="40" column="0">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

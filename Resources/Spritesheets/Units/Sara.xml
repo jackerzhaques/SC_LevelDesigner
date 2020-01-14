@@ -1,0 +1,9 @@
+<spritesheet src="sara.png" Name="Sara">
+ <frame dir="0" anchor="(30.6259,51.5868)" type="0" origin="(31.8111,62.4263)" period="200" index="0" rect="(13.7828,11.017,34.2172,56.983)"/>
+ <frame dir="0" anchor="(96.0456,60.8976)" type="0" origin="(96.0136,61.3434)" period="200" index="1" rect="(81.9106,14.5953,29.0894,52.4047)"/>
+ <frame dir="0" anchor="(30.6259,51.5868)" type="0" origin="(159.88,61.7223)" period="200" index="2" rect="(141.891,7.0085,33.5646,58.9976)"/>
+ <frame dir="0" anchor="(287,52)" type="0" origin="(223.744,61.4323)" period="200" index="3" rect="(198.946,4.50425,52.1086,68.9915)"/>
+ <frame dir="0" anchor="(287,52)" type="0" origin="(287.889,61.1568)" period="200" index="4" rect="(261.946,7.50425,52.1086,68.9915)"/>
+ <frame dir="0" anchor="(287,52)" type="0" origin="(351.779,61.1568)" period="200" index="5" rect="(324.946,6.50425,52.1086,68.9915)"/>
+ <frame dir="0" anchor="(287,52)" type="0" origin="(415.924,61.4323)" period="200" index="6" rect="(389.946,6.50425,52.1086,68.9915)"/>
+</spritesheet>

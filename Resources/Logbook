@@ -1,0 +1,153 @@
+Current Tasks
+    -Asset Manager
+    -Item Manager
+    -Projectile Manager
+    -Terrain Manager
+    -Destructible Manager
+
+Current Work
+    Unit Manager
+        -Implement Spritesheets
+        -Implement Abilities
+        -Implement Sounds
+        -Implement Effects/Art
+    Ability Designer
+        -Bug checking/fixing
+        -Implement Effects/Art
+        -Implement sounds
+        -Currently text is not saved as expression (e.g. TEXT_LEARN), but
+            instead as a string. Wouldn't make sense to store as an expression
+            but would be possible to convert the string to an expression
+            during runtime instead.
+        -Other fields are all saved as expressions. Will have to figure out
+            how to streamline this for coding efficiency. Perhaps one method
+            to handle it?
+    Asset Manager
+        -Need to be able to import and classify
+            -Sounds
+                -Music
+                -Effects (Spell casts, damaging, spritesheet sounds)
+            -Images/Icons
+                -Any images used throughout the game can be classified as a general image because there are not many of them
+                -Icons (abilities, items, units)
+            -Spritesheets
+                -Spritesheet XML files imported.
+                -Should also automatically import the associated spritesheet image
+
+        -What does importing mean?
+            -Copy all imported assets relative to the resource file
+                e.g. "C:\Game\Resource.ldr" has "C:\Game\Assets\Spritesheets\Sara.xml", "C:\Game\Assets\Spritesheets\Sara.png", etc.
+
+        -Do we need any text editing?
+            -Needs a name, maybe different from file name?
+
+
+        -What we need
+            -Ability to add new assets
+            -Ability to remove existing assets
+            -Store assets in asset manager memory
+            -Ability to change asset name/path
+            -Copy assets to their appropriate path, make folders if they don't exist
+
+
+            -Code
+                Adding assets
+                    -Find currently selected asset category
+                    -Create new asset underneath that field
+                    -Store the asset in memory
+                    -Refresh GUI list
+                    -save XML
+                Removing assets
+                    -Find currently selected asset
+                    -Remove asset from memory
+                    -Delete asset object
+                    -Refresh GUI list
+                    -Save XML
+                Changing assets
+                    -Find current asset
+                    -Change the field value
+                    -Copy asset if necessary
+                    -Remove old asset if necessary
+                    -Refresh GUI list
+                    -Save XML
+                Copy Assets
+                    -Get asset category
+                    -Get new path to store asset
+                    -Create directory if necessary
+                    -Create a copy of the file in new directory
+                Asset Storage
+                    -QList for each asset type
+                        +If number of categories grows too large, perhaps move to tree structure?
+
+                -Work is as follows
+                -GUI
+                    Add fields for asset name and asset path
+                    Double clicking the "Asset Path" field brings up a file browser
+                -Slots
+                    -Add button pressed
+                        -Handles "Adding assets"
+
+                        -Finds asset category
+                        -Creates asset object
+                        -Calls "addAsset" function
+                    -Remove button pressed
+                        -Handles "Removing assets"
+
+                        -Finds asset in question
+                        -Calls "removeAsset" function
+                    -Field changed
+                        -Handles "Changing assets"
+
+                        -Find asset in question
+                        -Finds new field text
+                        -Sets the new name for the asset
+
+                    -Field double clicked
+                        -If path field
+                            -Create file browser window
+                            -Set field text to resulting window value
+
+                -Functions
+                    -addAsset
+                        -Stores the asset in memory in the appropriate place
+                        -Calls moveAssetFile
+                        -Calls "saveAssets" function
+                    -removeAsset
+                        -Removes the asset from the list
+                        -Deletes the asset from memory
+                        -Calls deleteAssetFile
+                        -Calls "saveAssets" function
+                    -saveAssets
+                        -Update GUI
+                        -emit itemChanged to save XML
+                    -deleteAssetFile
+                        -Only if resource file exists
+                        -Find asset using file name and category
+                        -If exists, delete file
+                    -moveAssetFile
+                        -Only if resource file exists
+                        -Load path to new asset
+                        -Create new path based on category
+                        -If directories don't exist, create them
+                        -Copy old file to new path
+
+                    -NEW CHANGE
+                        -Adding an asset immediately copies over the asset's files
+                        -Removing an asset deletes any associated files
+                        -No need to have "path" in an asset anymore. Path can no longer be changed
+
+                -Signals
+                    itemChanged()   - Emitted whenever an item is added/removed/modified
+    Sound Manager
+        -Not started yet
+    Effects/Art Manager
+        -Not started yet
+
+-Left Off
+    -Started asset manager
+
+Backlogged
+    ExpressionDialog
+        Implement auto focus when opening window and pressing buttons
+        Implement error checking buttons
+            -Started but not finished

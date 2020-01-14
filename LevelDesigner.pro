@@ -25,20 +25,70 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
+    Game/Ability.cpp \
+    Game/Expression.cpp \
+    Game/Sound.cpp \
+    SpriteCreator/ResourceManager/AssetManager.cpp \
+    SpriteCreator/ResourceManager/ExpressionDialog.cpp \
         main.cpp \
         mainwindow.cpp \
     graphicsview.cpp \
-    sprite.cpp
-
+    sprite.cpp \
+    SpriteCreator/spritecreator.cpp \
+    Game/Spritesheet.cpp \
+    Game/Entity.cpp \
+    SpriteCreator/LevelDesigner.cpp \
+    Game/Globals.cpp \
+    Game/ResourceLoader.cpp \
+    Game/ResourceGlobals.cpp \
+    Game/Camera.cpp \
+    SpriteCreator/ResourceManager.cpp \
+    Game/Unit.cpp \
+    SpriteCreator/ResourceOpenDialog.cpp \
+    SpriteCreator/ResourceManager/UnitManager.cpp \
+    SpriteCreator/ResourceManager/AbilityManager.cpp
 HEADERS += \
+    Game/Ability.h \
+    Game/Expression.h \
+    Game/Sound.h \
+    SpriteCreator/ResourceManager/AssetManager.h \
+    SpriteCreator/ResourceManager/ExpressionDialog.h \
         mainwindow.h \
     graphicsview.h \
-    sprite.h
+    sprite.h \
+    SpriteCreator/spritecreator.h \
+    Game/Spritesheet.h \
+    Game/Entity.h \
+    SpriteCreator/LevelDesigner.h \
+    Game/Globals.h \
+    Game/ResourceLoader.h \
+    Game/ResourceGlobals.h \
+    Game/Camera.h \
+    SpriteCreator/ResourceManager.h \
+    Game/Unit.h \
+    SpriteCreator/ResourceOpenDialog.h \
+    SpriteCreator/ResourceManager/UnitManager.h \
+    SpriteCreator/ResourceManager/AbilityManager.h \
+    Game/StatDialog.h
 
 FORMS += \
-        mainwindow.ui
+    SpriteCreator/ResourceManager/AssetManager.ui \
+    SpriteCreator/ResourceManager/ExpressionDialog.ui \
+        mainwindow.ui \
+    SpriteCreator/spritecreator.ui \
+    SpriteCreator/LevelDesigner.ui \
+    SpriteCreator/ResourceManager.ui \
+    SpriteCreator/ResourceOpenDialog.ui \
+    SpriteCreator/ResourceManager/UnitManager.ui \
+    SpriteCreator/ResourceManager/AbilityManager.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    Resources/Icons.qrc
+
+DISTFILES += \
+    Resources/Logbook

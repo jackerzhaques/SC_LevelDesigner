@@ -1,0 +1,6 @@
+<UnitTypes>
+ <UnitType healthBase="100" projectileOrigin="(0,0)" healthRegen="1" missileArc="0" critBonus="0" acceleration="50" manaType="0" range="100" currentHealth="100" iconPath="" spritePath="" strength="0" manaBase="100" critMultiplier="2" hasCollision="1" spirit="0" currentMana="0" spriteXMLPath="" agility="0" critChance="0.1" attackType="0" constitution="0" baseDamage="5" splashRange="0" intellect="0" manaRegen="1" baseMoveSpeed="100"/>
+</UnitTypes>
+<Abilities>
+ <UnitType manaDrain="" castTime="" maxLevels="0" learnTextExt="No description" healthRegen="" normalTextExt="No description" levelGap="0" manaCost="" acceleration="" critBonus="" range="" mana="" normalText="Fireball" isChanneled="0" channelDuration="" movementSpeed="" abilityDamage="" targetType="0" strength="" learnText="Blank Ability" critMultiplier="" spirit="" health="" disabledTextExt="Ability disabled" agility="" critChance="" disablesCollision="0" constitution="" cooldown="" intellect="" manaRegen="" damage=""/>
+</Abilities>

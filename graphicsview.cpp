@@ -1,7 +1,7 @@
 #include "graphicsview.h"
 #include <QDebug>
 
-GraphicsView::GraphicsView()
+GraphicsView::GraphicsView(QWidget *parent) : QGraphicsView (parent)
 {
 
 }

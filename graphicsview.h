@@ -10,7 +10,7 @@ class GraphicsView : public QGraphicsView
 {
     Q_OBJECT
 public:
-    GraphicsView();
+    GraphicsView(QWidget *parent);
     void mousePressEvent(QMouseEvent *event);
     void mouseMoveEvent(QMouseEvent* mouseEvent);
 
